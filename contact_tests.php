@@ -1,4 +1,4 @@
-<?PHP
+<?php
 require_once("AbstractModel.php");
 require_once("Contact.php");
 ini_set("display_errors", true);
@@ -12,6 +12,7 @@ print_r($contact->getData());
 // name => John Doe
 // email => john@doe.com
 echo '<br/><br/>';
+
 echo $contact->getData('name');
 //Should print:
 // John Doe
@@ -51,3 +52,4 @@ print_r($newContact->getData());
 // email => gilbTheparrot@gmail.com
 
 $newContact->delete(); //Should delete him Gilbert Barber from the database
+?>
